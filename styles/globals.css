@@ -10,3 +10,33 @@
   no-repeat;
   position: relative;
 }
+
+.hero-con{
+  height: 60vh;
+}
+
+.services-item{
+    padding: 25px 17px 17px;
+    box-shadow: 0 4px 2px -2px #000000;
+    z-index: 111;
+    top: -30px;
+    transition: all 0.3s ease 0s;
+}
+
+.service-icon{
+    line-height: 88px;
+    position: absolute;
+    top: -50px;
+    z-index: -1;
+    font-size: 40px;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #ff3115;
+    transition: all 0.3s ease 0s;
+}
+
+/* .icon{
+  left: 
+} */
