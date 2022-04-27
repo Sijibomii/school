@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.hero{
+  display: flex;
+  background: linear-gradient(to bottom, rgba(7, 1, 1, 0.35), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), 
+  url('../image/img.jpg') top left / cover
+  no-repeat;
+  position: relative;
+}
