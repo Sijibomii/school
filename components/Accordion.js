@@ -10,13 +10,13 @@ export default function Accordion() {
             // ff3115
 
             <>
-              <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left bg-[#eeeaea] rounded-lg hover:bg-[#ff3115] focus:bg-[#ff3115] focus:outline-none focus-visible:ring 
+              <Disclosure.Button className="flex justify-between w-full px-4 py-4 text-sm font-medium text-left bg-[#eeeaea] rounded-lg hover:bg-[#ff3115] focus:bg-[#ff3115] focus:outline-none focus-visible:ring 
               ">
                 <span>Our Values</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'transform rotate-180' : ''
-                  } w-5 h-5 text-purple-500`}
+                  } w-5 h-5 text-gray-500`}
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
@@ -31,12 +31,12 @@ export default function Accordion() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left bg-[#eeeaea] rounded-lg hover:bg-[#ff3115] focus:bg-[#ff3115] focus:outline-none focus-visible:ring">
+              <Disclosure.Button className="flex justify-between w-full px-4 py-4 text-sm font-medium text-left bg-[#eeeaea] rounded-lg hover:bg-[#ff3115] focus:bg-[#ff3115] focus:outline-none focus-visible:ring">
                 <span>Our Mission</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'transform rotate-180' : ''
-                  } w-5 h-5 text-purple-500`}
+                  } w-5 h-5 text-gray-500`}
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
@@ -51,12 +51,12 @@ export default function Accordion() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left bg-[#eeeaea] rounded-lg hover:bg-[#ff3115] focus:bg-[#ff3115] focus:outline-none focus-visible:ring">
+              <Disclosure.Button className="flex justify-between w-full px-4 py-4 text-sm font-medium text-left bg-[#eeeaea] rounded-lg hover:bg-[#ff3115] focus:bg-[#ff3115] focus:outline-none focus-visible:ring">
                 <span>Our Vision</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'transform rotate-180' : ''
-                  } w-5 h-5 text-purple-500`}
+                  } w-5 h-5 text-gray-500`}
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
