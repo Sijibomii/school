@@ -36,7 +36,9 @@
     color: #ff3115;
     transition: all 0.3s ease 0s;
 }
-
+.about-top{
+  border-width: 40%;
+}
 /* .icon{
   left: 
 } */
