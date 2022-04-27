@@ -11,9 +11,9 @@ const Hero = () => {
         </div>
         <div className='hero-footer flex justify-center'>
           <Link href="/" >
-            <a className='rounded-none p-4 bg-red-700 text-white mt-4 mr-4'>About Us</a></Link>
+            <a className='rounded-none p-4 bg-[#ff3115] text-white mt-4 mr-4'>About Us</a></Link>
           <Link href="/" className=''>
-          <a className='rounded-none p-4 bg-red-700 text-white mt-4'>Contact Us</a>
+          <a className='rounded-none p-4 bg-[#ff3115] text-white mt-4'>Contact Us</a>
           </Link>
         </div>
       </div>
