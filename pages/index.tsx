@@ -3,8 +3,8 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Services from '../components/Services'
 import About from '../components/About'
-import Image from 'next/image'
-
+import Achievements from '../components/Achievements';
+import Courses from '../components/Courses'
 const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col">
@@ -12,6 +12,8 @@ const Home: NextPage = () => {
       <Hero />
       <Services />
       <About />
+      <Achievements />
+      <Courses />
     </div>
   )
 }
