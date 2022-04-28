@@ -28,7 +28,13 @@
   left: 0px;
   box-shadow: 0px;
 }
-
+.bb{
+  border: 4px solid white;
+  /* top: -50px; */
+}
+.bb-img{
+  border-radius: 50%;
+}
 .service-icon{
     line-height: 88px;
     position: absolute;
@@ -55,6 +61,12 @@
 }
 .achievement-1{
   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.testimony-con{
+  background: linear-gradient(to bottom, rgba(7, 1, 1, 0.35), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), 
+  url('../image/testimonial.jpg') top left / cover
+  no-repeat;
 }
 /* .icon{
   left: 

@@ -4,7 +4,9 @@ import Hero from '../components/Hero'
 import Services from '../components/Services'
 import About from '../components/About'
 import Achievements from '../components/Achievements';
-import Courses from '../components/Courses'
+import Courses from '../components/Courses';
+import Testimony from '../components/Testimony';
+
 const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col">
@@ -14,6 +16,7 @@ const Home: NextPage = () => {
       <About />
       <Achievements />
       <Courses />
+      <Testimony />
     </div>
   )
 }
