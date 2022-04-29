@@ -3,16 +3,36 @@
 @tailwind utilities;
 
 
+.item {
+  height: 10rem;
+  background: #4dc7a0;
+  padding: 1rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ #bodyContent {
+  /* override */
+  overflow: hidden;
+}
+
+.owl-carousel{
+  width: 360px!important;
+}
+.car-con{
+  overflow: hidden;
+  width: auto;
+}
 .hero{
   display: flex;
-  /* background: linear-gradient(to bottom, rgba(7, 1, 1, 0.35), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), 
+  background: linear-gradient(to bottom, rgba(7, 1, 1, 0.35), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), 
   url('../image/img.jpg') top left / cover
-  no-repeat; */
+  no-repeat;
   position: relative;
 }
 
 .hero-con{
-  height: 60vh;
+  height: 70vh;
 }
 
 .services-item{
