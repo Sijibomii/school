@@ -1,4 +1,7 @@
-import React from 'react'
+import { Menu, Transition } from '@headlessui/react'
+import { Fragment, useEffect, useRef, useState } from 'react'
+import { ChevronDownIcon } from '@heroicons/react/solid'
+
 function Navbar() {
   return (
     <>
@@ -27,13 +30,97 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <div className='nav-lower flex justify-between items-stretch p-3'>
-        <div className='ham-menu flex justify-center items-center'>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+      <div className='nav-lower flex justify-between items-stretch p-3 '>
+        <div className='ham-menu items-center focus:outline-none relative justify-center rounded-md  hover:bg-opacity-30 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'>
+          <Menu as="div" className="relative inline-block text-left">
+            <div>
+          <Menu.Button className="focus:outline-none inline-flex w-full justify-center rounded-md text-sm font-medium  hover:bg-opacity-30 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </Menu.Button>
         </div>
-        <div className='location flex justify-center items-center'>
+        <Transition
+          as={Fragment}
+          enter="transition ease-out duration-100"
+          enterFrom="transform opacity-0 scale-95"
+          enterTo="transform opacity-100 scale-100"
+          leave="transition ease-in duration-75"
+          leaveFrom="transform opacity-100 scale-100"
+          leaveTo="transform opacity-0 scale-95"
+        >
+          <Menu.Items className="
+          z-10 focus:outline-none 
+          absolute left-0 mt-3 px-4 w-100 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+            <div className="px-1 py-1 ">
+              <Menu.Item>
+                {({ active }) => (
+                  <button
+                    className={`${
+                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  >
+                    
+                  </button>
+                )}
+              </Menu.Item>
+              <Menu.Item>
+                {({ active }) => (
+                  <button
+                    className={`${
+                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  >
+                    
+                  </button>
+                )}
+              </Menu.Item>
+            </div>
+            <div className="px-1 py-1">
+              <Menu.Item>
+                {({ active }) => (
+                  <button
+                    className={`${
+                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  >
+                    
+                    Archive
+                  </button>
+                )}
+              </Menu.Item>
+              <Menu.Item>
+                {({ active }) => (
+                  <button
+                    className={`${
+                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  >
+                  
+                    Move
+                  </button>
+                )}
+              </Menu.Item>
+            </div>
+            <div className="px-1 py-1">
+              <Menu.Item>
+                {({ active }) => (
+                  <button
+                    className={`${
+                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  >
+                
+                    Delete
+                  </button>
+                )}
+              </Menu.Item>
+            </div>
+          </Menu.Items>
+        </Transition>
+      </Menu>
+        </div>
+        <div className='location flex justify-center items-center '>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
             <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -54,3 +141,233 @@ function Navbar() {
 }
 
 export default Navbar
+
+
+
+// export default function Example() {
+//   return (
+    
+//   )
+// }
+
+// function EditInactiveIcon(props) {
+//   return (
+//     <svg
+//       {...props}
+//       viewBox="0 0 20 20"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       <path
+//         d="M4 13V16H7L16 7L13 4L4 13Z"
+//         fill="#EDE9FE"
+//         stroke="#A78BFA"
+//         strokeWidth="2"
+//       />
+//     </svg>
+//   )
+// }
+
+// function EditActiveIcon(props) {
+//   return (
+//     <svg
+//       {...props}
+//       viewBox="0 0 20 20"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       <path
+//         d="M4 13V16H7L16 7L13 4L4 13Z"
+//         fill="#8B5CF6"
+//         stroke="#C4B5FD"
+//         strokeWidth="2"
+//       />
+//     </svg>
+//   )
+// }
+
+// function DuplicateInactiveIcon(props) {
+//   return (
+//     <svg
+//       {...props}
+//       viewBox="0 0 20 20"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       <path
+//         d="M4 4H12V12H4V4Z"
+//         fill="#EDE9FE"
+//         stroke="#A78BFA"
+//         strokeWidth="2"
+//       />
+//       <path
+//         d="M8 8H16V16H8V8Z"
+//         fill="#EDE9FE"
+//         stroke="#A78BFA"
+//         strokeWidth="2"
+//       />
+//     </svg>
+//   )
+// }
+
+// function DuplicateActiveIcon(props) {
+//   return (
+//     <svg
+//       {...props}
+//       viewBox="0 0 20 20"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       <path
+//         d="M4 4H12V12H4V4Z"
+//         fill="#8B5CF6"
+//         stroke="#C4B5FD"
+//         strokeWidth="2"
+//       />
+//       <path
+//         d="M8 8H16V16H8V8Z"
+//         fill="#8B5CF6"
+//         stroke="#C4B5FD"
+//         strokeWidth="2"
+//       />
+//     </svg>
+//   )
+// }
+
+// function ArchiveInactiveIcon(props) {
+//   return (
+//     <svg
+//       {...props}
+//       viewBox="0 0 20 20"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       <rect
+//         x="5"
+//         y="8"
+//         width="10"
+//         height="8"
+//         fill="#EDE9FE"
+//         stroke="#A78BFA"
+//         strokeWidth="2"
+//       />
+//       <rect
+//         x="4"
+//         y="4"
+//         width="12"
+//         height="4"
+//         fill="#EDE9FE"
+//         stroke="#A78BFA"
+//         strokeWidth="2"
+//       />
+//       <path d="M8 12H12" stroke="#A78BFA" strokeWidth="2" />
+//     </svg>
+//   )
+// }
+
+// function ArchiveActiveIcon(props) {
+//   return (
+//     <svg
+//       {...props}
+//       viewBox="0 0 20 20"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       <rect
+//         x="5"
+//         y="8"
+//         width="10"
+//         height="8"
+//         fill="#8B5CF6"
+//         stroke="#C4B5FD"
+//         strokeWidth="2"
+//       />
+//       <rect
+//         x="4"
+//         y="4"
+//         width="12"
+//         height="4"
+//         fill="#8B5CF6"
+//         stroke="#C4B5FD"
+//         strokeWidth="2"
+//       />
+//       <path d="M8 12H12" stroke="#A78BFA" strokeWidth="2" />
+//     </svg>
+//   )
+// }
+
+// function MoveInactiveIcon(props) {
+//   return (
+//     <svg
+//       {...props}
+//       viewBox="0 0 20 20"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       <path d="M10 4H16V10" stroke="#A78BFA" strokeWidth="2" />
+//       <path d="M16 4L8 12" stroke="#A78BFA" strokeWidth="2" />
+//       <path d="M8 6H4V16H14V12" stroke="#A78BFA" strokeWidth="2" />
+//     </svg>
+//   )
+// }
+
+// function MoveActiveIcon(props) {
+//   return (
+//     <svg
+//       {...props}
+//       viewBox="0 0 20 20"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       <path d="M10 4H16V10" stroke="#C4B5FD" strokeWidth="2" />
+//       <path d="M16 4L8 12" stroke="#C4B5FD" strokeWidth="2" />
+//       <path d="M8 6H4V16H14V12" stroke="#C4B5FD" strokeWidth="2" />
+//     </svg>
+//   )
+// }
+
+// function DeleteInactiveIcon(props) {
+//   return (
+//     <svg
+//       {...props}
+//       viewBox="0 0 20 20"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       <rect
+//         x="5"
+//         y="6"
+//         width="10"
+//         height="10"
+//         fill="#EDE9FE"
+//         stroke="#A78BFA"
+//         strokeWidth="2"
+//       />
+//       <path d="M3 6H17" stroke="#A78BFA" strokeWidth="2" />
+//       <path d="M8 6V4H12V6" stroke="#A78BFA" strokeWidth="2" />
+//     </svg>
+//   )
+// }
+
+// function DeleteActiveIcon(props) {
+//   return (
+//     <svg
+//       {...props}
+//       viewBox="0 0 20 20"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       <rect
+//         x="5"
+//         y="6"
+//         width="10"
+//         height="10"
+//         fill="#8B5CF6"
+//         stroke="#C4B5FD"
+//         strokeWidth="2"
+//       />
+//       <path d="M3 6H17" stroke="#C4B5FD" strokeWidth="2" />
+//       <path d="M8 6V4H12V6" stroke="#C4B5FD" strokeWidth="2" />
+//     </svg>
+//   )
+// }
