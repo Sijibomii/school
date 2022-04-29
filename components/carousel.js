@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Image from 'next/image';
 import dynamic from "next/dynamic";
 import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel';
+import '../assets/owl.carousel';
 
 const OwlCarousel = dynamic(() => {
   return import("react-owl-carousel")
