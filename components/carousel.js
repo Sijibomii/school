@@ -73,9 +73,7 @@ const Carousel = () => {
               <h2 className='text-black text-sm'>
               Lorem ipsum dolor sit amet, consectetur adientum
               Lorem ipsum dolor sit amet, consectetur adientum
-              Lorem ipsum dolor sit amet, consectetur adientum
-              Lorem ipsum dolor sit amet, consectetur adientum
-              Lorem ipsum dolor sit amet, consectetur adientum
+              
               </h2>
             </div>
       </div>
@@ -88,9 +86,7 @@ const Carousel = () => {
               <h2 className='text-black text-sm'>
               Lorem ipsum dolor sit amet, consectetur adientum
               Lorem ipsum dolor sit amet, consectetur adientum
-              Lorem ipsum dolor sit amet, consectetur adientum
-              Lorem ipsum dolor sit amet, consectetur adientum
-              Lorem ipsum dolor sit amet, consectetur adientum
+              
               </h2>
             </div>
       </div>
@@ -103,9 +99,7 @@ const Carousel = () => {
               <h2 className='text-black text-sm'>
               Lorem ipsum dolor sit amet, consectetur adientum
               Lorem ipsum dolor sit amet, consectetur adientum
-              Lorem ipsum dolor sit amet, consectetur adientum
-              Lorem ipsum dolor sit amet, consectetur adientum
-              Lorem ipsum dolor sit amet, consectetur adientum
+              
               </h2>
             </div>
       </div>
@@ -118,9 +112,7 @@ const Carousel = () => {
               <h2 className='text-black text-sm'>
               Lorem ipsum dolor sit amet, consectetur adientum
               Lorem ipsum dolor sit amet, consectetur adientum
-              Lorem ipsum dolor sit amet, consectetur adientum
-              Lorem ipsum dolor sit amet, consectetur adientum
-              Lorem ipsum dolor sit amet, consectetur adientum
+              
               </h2>
             </div>
       </div>

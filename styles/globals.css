@@ -33,15 +33,29 @@
 
 .hero-con{
   height: 70vh;
+
 }
 
+@media (min-width: 768px){
+  .hero-con {
+    height: 50vh;
+}
+}
+
+.services{
+  --bs-gutter-x: 1.5rem!important;
+  --bs-gutter-y: 0;
+ 
+}
+.service-item > p{
+  text-align: center !important;
+}
 .services-item{
     padding: 25px 17px 17px;
     box-shadow: 0 4px 2px -2px #000000;
     z-index: 111;
     top: -30px;
     transition: all 0.3s ease 0s;
-
   }
 .img2{
   top: 0px;

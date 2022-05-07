@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
-      <Hero />
+      <Hero /> 
       <Services />
       <About />
       <Achievements />

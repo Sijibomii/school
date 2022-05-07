@@ -30,7 +30,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <div className='nav-lower flex justify-between items-stretch p-3 '>
+      <div className='nav-lower flex justify-between items-stretch p-3 md:px-12'>
         <div className='ham-menu items-center focus:outline-none relative justify-center rounded-md  hover:bg-opacity-30 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'>
           <Menu as="div" className="relative inline-block text-left">
             <div>
