@@ -4,7 +4,8 @@ const Info = () => {
   return (
     <div className='info-con flex'>
       <div className='info-con-inner flex flex-col bg-[#222] p-4 py-12 
-      md:flex-row md:flex-wrap md:px-2 md:items-center md:justify-center w-full'>
+      md:flex-row md:flex-wrap md:px-2 md:items-center md:justify-center w-full lg:justify-between
+      lg:px-32'>
         <div className='info-1 flex flex-col p-8 items-center'>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 " fill="#ff3115" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />

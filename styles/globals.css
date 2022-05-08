@@ -101,7 +101,15 @@
   }
 
   .owl-carousel{
-    width: 1020px!important;
+    width: 1200px!important;
+  }
+
+  .footer-1{
+    flex: 50%;
+  }
+  .footer-2,
+  .footer-3{
+    flex: 25%;
   }
 }
 
