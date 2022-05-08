@@ -5,12 +5,12 @@ const Courses = () => {
   return (
     <div className='courses-container p-4 py-12 md:px-12'>
       <h2 className='text-2xl font-bold ml-4 mb-2'>Our Courses</h2>
-      <div className='courses-con p-4'>
+      <div className='courses-con p-4 lg:flex lg:px-10'>
         <div className='courses-top'>
           <List />
         </div>
-        <div className='courses-bottom mt-8'>
-          <Image src={'/bookkks.jpg'} width={300} height={200} />
+        <div className='courses-bottom mt-8 flex justify-center'>
+          <Image src={'/bookkks.jpg'} width={300} height={200} className=""/>
         </div>
       </div>
     </div>

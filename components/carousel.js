@@ -7,7 +7,7 @@ import '../assets/owl.carousel';
 const OwlCarousel = dynamic(() => {
   return import("react-owl-carousel")
 },
- {
+ { 
   ssr: false,
 });
 
@@ -28,7 +28,11 @@ const Carousel = () => {
     580: {
       items: 2,
       margin: 10
-    }
+    },
+    720:{
+      items: 2,
+      margin: 20
+    },
   }
   
   return(

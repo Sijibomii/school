@@ -1,10 +1,10 @@
 import { Disclosure } from '@headlessui/react'
 import { ChevronUpIcon } from '@heroicons/react/solid'
-
+ 
 export default function Accordion() {
   return (
     <div className="w-full pt-4">
-      <div className="w-full max-w-md p-2 mx-auto bg-white rounded-2xl">
+      <div className="w-full p-2  bg-white rounded-2xl">
         <Disclosure>
           {({ open }) => (
             // ff3115
